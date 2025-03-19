@@ -1,0 +1,8 @@
+services:
+  dodoApp:
+    cloneFrom: https://github.com/Andriiklymiuk/golden-example.git
+    path: ./golden-example
+    beforeStart:
+      - corgi init
+    start:
+      - corgi run
